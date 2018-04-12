@@ -1,5 +1,7 @@
 
 # react-native-jam-icons
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/react-native-jam-icons.svg)](https://greenkeeper.io/)
 [![package version](https://img.shields.io/npm/v/react-native-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-native-jam-icons)
 [![package downloads](https://img.shields.io/npm/dm/react-native-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-native-jam-icons)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
