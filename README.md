@@ -24,6 +24,8 @@ handcrafted & pixel perfect icons form [Jam icons](http://jam-icons.com/) as Rea
 
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
+First install [react-native-svg](https://github.com/react-native-community/react-native-svg) (Not needed when using Expo). Then:
+
 ```sh
 $ npm install react-native-jam-icons
 $ # OR
@@ -36,7 +38,7 @@ $ yarn add react-native-jam-icons
 import { Amazon } from 'react-native-jam-icons'
 
 const Example = (props) => <View>
-    <Amazon/>
+    <Amazon width={40} height={40} color={'pink'}/>
 </View>
 ```
 
