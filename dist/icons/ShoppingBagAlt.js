@@ -10,13 +10,17 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ShoppingBagAlt = function ShoppingBagAlt(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 48 64" }, props),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M38 16v-6c0-5.5-4.5-10-10-10h-8c-5.5 0-10 4.5-10 10v6H0v48h48V16H38zm-24-6c0-3.3 2.7-6 6-6h8c3.3 0 6 2.7 6 6v6H14v-6zm30 50H4V20h40v40z",
       fill: "#343434"
     })

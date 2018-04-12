@@ -10,15 +10,19 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var RssFeed = function RssFeed(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
-    _react2.default.createElement("path", { className: "st0", d: "M0 0v6c32 0 58 26 58 58h6C64 28.7 35.3 0 0 0z" }),
-    _react2.default.createElement("circle", { className: "st0", cx: 8, cy: 56, r: 8 }),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, { className: "st0", d: "M0 0v6c32 0 58 26 58 58h6C64 28.7 35.3 0 0 0z" }),
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 8, cy: 56, r: 8 }),
+    _react2.default.createElement(_reactNativeSvg.Path, {
       className: "st0",
       d: "M0 22v6c19.9 0 36 16.1 36 36h6c0-23.2-18.8-42-42-42z"
     })

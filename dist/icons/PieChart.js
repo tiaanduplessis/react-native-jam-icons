@@ -10,13 +10,17 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PieChart = function PieChart(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M32 0v32h32C64 14.3 49.7 0 32 0zm-4 36V.2C12.2 2.2 0 15.7 0 32c0 17.7 14.3 32 32 32 16.3 0 29.8-12.2 31.8-28H28z",
       fill: "#333"
     })

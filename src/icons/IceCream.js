@@ -1,12 +1,13 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 const IceCream = props => (
-  <svg viewBox="0 0 32 64" {...props}>
-    <path
+  <Svg viewBox="0 0 32 64" {...props}>
+    <Path
       d="M16 0C7.2 0 0 7.2 0 16v32h13v13c0 1.6 1.3 3 3 3s3-1.3 3-3V48h13V16c0-8.8-7.2-16-16-16zm12 44H4V16C4 9.4 9.4 4 16 4s12 5.4 12 12v28z"
       fill="#343434"
     />
-  </svg>
+  </Svg>
 );
 
 export default IceCream;

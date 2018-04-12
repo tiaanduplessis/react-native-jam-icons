@@ -1,13 +1,13 @@
 {
-  "name": "react-jam-icons",
+  "name": "react-native-jam-icons",
   "version": "1.0.0",
-  "description": "Jam icons as React Components",
+  "description": "Jam icons as React Native Components",
   "main": "src/index.js",
-  "repository": "https://github.com/tiaanduplessis/react-jam-icons.git",
+  "repository": "https://github.com/tiaanduplessis/react-native-jam-icons.git",
   "author": "Tiaan du Plessis",
   "license": "MIT",
   "scripts": {
-    "build": "svgr -d src/icons jam/svg && node build.js && babel src --out-dir dist"
+    "build": "svgr --native -d src/icons jam/svg && node build.js && babel src --out-dir dist"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -16,6 +16,8 @@
     "svgr": "^1.9.1"
   },
   "keywords": [
+    "react",
+    "react-native",
     "svg",
     "icons",
     "jam"

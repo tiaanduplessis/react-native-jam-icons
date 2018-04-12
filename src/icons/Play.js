@@ -1,12 +1,13 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 const Play = props => (
-  <svg viewBox="0 0 47 62" {...props}>
-    <path
+  <Svg viewBox="0 0 47 62" {...props}>
+    <Path
       d="M45.5 29.1L2.5.4C1.1-.5 0 .1 0 1.8v58c0 1.7 1.1 2.3 2.5 1.3l43-28.7c1.4-.9 1.4-2.4 0-3.3zM6 51.6V10l31.2 20.8L6 51.6z"
       fill="#343434"
     />
-  </svg>
+  </Svg>
 );
 
 export default Play;

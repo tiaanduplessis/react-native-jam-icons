@@ -10,15 +10,19 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MoreF = function MoreF(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 16" }, props),
-    _react2.default.createElement("circle", { className: "st0", cx: 8, cy: 8, r: 8 }),
-    _react2.default.createElement("circle", { className: "st0", cx: 32, cy: 8, r: 8 }),
-    _react2.default.createElement("circle", { className: "st0", cx: 56, cy: 8, r: 8 })
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 8, cy: 8, r: 8 }),
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 32, cy: 8, r: 8 }),
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 56, cy: 8, r: 8 })
   );
 };
 

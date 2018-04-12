@@ -1,12 +1,13 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 const Tube = props => (
-  <svg viewBox="0 0 20 63" {...props}>
-    <path
+  <Svg viewBox="0 0 20 63" {...props}>
+    <Path
       d="M10 58c1.7 0 3-1.3 3-3V23H7v32c0 1.7 1.3 3 3 3zm8-58H2C.9 0 0 .9 0 2v4c0 1.1.9 2 2 2v47c0 4.4 3.6 8 8 8s8-3.6 8-8V8c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM3 3h14v2H3V3zm12 52c0 2.8-2.2 5-5 5s-5-2.2-5-5V8h10v47z"
       fill="#343434"
     />
-  </svg>
+  </Svg>
 );
 
 export default Tube;

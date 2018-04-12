@@ -10,13 +10,17 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var VolumeMuteF = function VolumeMuteF(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 55 64" }, props),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M27.4 1.2L10.1 20H2c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h8.1l17.4 18.8c1.1 1.2 2 .9 2-.8V2c0-1.7-.9-2-2.1-.8zm27.2 24.4l-4.2-4.2-6.4 6.4-6.4-6.4-4.2 4.2 6.4 6.4-6.4 6.4 4.2 4.2 6.4-6.4 6.4 6.4 4.2-4.2-6.4-6.4z",
       fill: "#333"
     })

@@ -1,12 +1,12 @@
 
-# react-jam-icons
-[![package version](https://img.shields.io/npm/v/react-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-jam-icons)
-[![package downloads](https://img.shields.io/npm/dm/react-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-jam-icons)
+# react-native-jam-icons
+[![package version](https://img.shields.io/npm/v/react-native-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-native-jam-icons)
+[![package downloads](https://img.shields.io/npm/dm/react-native-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-native-jam-icons)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![package license](https://img.shields.io/npm/l/react-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-jam-icons)
+[![package license](https://img.shields.io/npm/l/react-native-jam-icons.svg?style=flat-square)](https://npmjs.org/package/react-native-jam-icons)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Jam icons as React Components
+> Jam icons as React Native Components
 
 ## Table of Contents
 
@@ -25,19 +25,19 @@ handcrafted & pixel perfect icons form [Jam icons](http://jam-icons.com/) as Rea
 This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com). 
 
 ```sh
-$ npm install react-jam-icons
+$ npm install react-native-jam-icons
 $ # OR
-$ yarn add react-jam-icons
+$ yarn add react-native-jam-icons
 ```
 
 ## Usage
 
 ```js
-import { Amazon } from 'react-jam-icons'
+import { Amazon } from 'react-native-jam-icons'
 
-const Example = (props) => <div>
+const Example = (props) => <View>
     <Amazon/>
-</div>
+</View>
 ```
 
 See [icons](src/icons) and [jam-icons](http://jam-icons.com/) for available icons.

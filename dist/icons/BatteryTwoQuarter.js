@@ -10,13 +10,17 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var BatteryTwoQuarter = function BatteryTwoQuarter(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 32" }, props),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M63 10h-2V3c0-1.7-1.3-3-3-3H3C1.3 0 0 1.3 0 3v26c0 1.7 1.3 3 3 3h55c1.7 0 3-1.3 3-3v-7h2c.6 0 1-.4 1-1V11c0-.5-.5-1-1-1zm-6 18H40V4h17v24z",
       fill: "#333"
     })

@@ -1,12 +1,13 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 const Document = props => (
-  <svg viewBox="0 0 48 64" {...props}>
-    <path
+  <Svg viewBox="0 0 48 64" {...props}>
+    <Path
       d="M45 0H3C1.3 0 0 1.3 0 3v58c0 1.7 1.3 3 3 3h42c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zm-1 60H4V4h40v56zM10 16h28c1.1 0 2-.9 2-2s-.9-2-2-2H10c-1.1 0-2 .9-2 2s.9 2 2 2zm0 12h28c1.1 0 2-.9 2-2s-.9-2-2-2H10c-1.1 0-2 .9-2 2s.9 2 2 2zm0 12h28c1.1 0 2-.9 2-2s-.9-2-2-2H10c-1.1 0-2 .9-2 2s.9 2 2 2zm0 12h28c1.1 0 2-.9 2-2s-.9-2-2-2H10c-1.1 0-2 .9-2 2s.9 2 2 2z"
       fill="#333"
     />
-  </svg>
+  </Svg>
 );
 
 export default Document;

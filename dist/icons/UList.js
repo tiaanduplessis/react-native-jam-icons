@@ -10,20 +10,24 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactNativeSvg = require("react-native-svg");
+
+var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var UList = function UList(props) {
   return _react2.default.createElement(
-    "svg",
+    _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 38" }, props),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Path, {
       className: "st0",
       d: "M15 6h46c1.7 0 3-1.3 3-3s-1.3-3-3-3H15c-1.7 0-3 1.3-3 3s1.3 3 3 3z"
     }),
-    _react2.default.createElement("circle", { className: "st0", cx: 3, cy: 3, r: 3 }),
-    _react2.default.createElement("circle", { className: "st0", cx: 3, cy: 19, r: 3 }),
-    _react2.default.createElement("circle", { className: "st0", cx: 3, cy: 35, r: 3 }),
-    _react2.default.createElement("path", {
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 3, cy: 3, r: 3 }),
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 3, cy: 19, r: 3 }),
+    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 3, cy: 35, r: 3 }),
+    _react2.default.createElement(_reactNativeSvg.Path, {
       className: "st0",
       d: "M61 16H15c-1.7 0-3 1.3-3 3s1.3 3 3 3h46c1.7 0 3-1.3 3-3s-1.3-3-3-3zm0 16H15c-1.7 0-3 1.3-3 3s1.3 3 3 3h46c1.7 0 3-1.3 3-3s-1.3-3-3-3z"
     })

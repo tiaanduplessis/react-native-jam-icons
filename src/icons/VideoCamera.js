@@ -1,12 +1,13 @@
 import React from "react";
+import Svg, { Path } from "react-native-svg";
 
 const VideoCamera = props => (
-  <svg viewBox="0 0 65 36" {...props}>
-    <path
+  <Svg viewBox="0 0 65 36" {...props}>
+    <Path
       d="M64 .9L51 7.5V3c0-1.1-.9-2-2-2H2C.9 1 0 1.9 0 3v30c0 1.1.9 2 2 2h47c1.1 0 2-.9 2-2v-4.4l13 6.6V.9zM47 31H4V5h43v26zm13-2.3l-9-4.5V11.9l9-4.5v21.3z"
       fill="#343434"
     />
-  </svg>
+  </Svg>
 );
 
 export default VideoCamera;
