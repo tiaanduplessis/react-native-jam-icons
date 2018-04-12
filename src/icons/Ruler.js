@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Ellipse } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Ruler = props => (
+const Ruler = ({ color, ...props }) => (
   <Svg viewBox="0 0 63 63" {...props}>
     <Path
       className="st0"

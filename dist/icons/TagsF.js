@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TagsF = function TagsF(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var TagsF = function TagsF(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 58 62" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M52.4 31.8L21.1 54.6c-.9.7-2.2.4-2.8-.4L3.6 33.9l-2.3 1.7c-.9.7-1.1 1.9-.4 2.8L17 60.5c.6.9 1.9 1.1 2.8.4L51 38.2c.9-.7 1.8-2.1 2-3.1l.8-4.9c-.4.6-.9 1.2-1.4 1.6zM51.3 2.4L38.5.6c-1.1-.2-2.7.2-3.6.9L3.6 24.2c-.9.7-1.1 1.9-.4 2.8l16.1 22.1c.6.9 1.9 1.1 2.8.4l31.3-22.8c.9-.7 1.8-2.1 2-3.1L57.5 11l-6.2-8.6zm-3.1 15.9c-2.7 1.9-6.3 1.4-8.2-1.2-1.9-2.6-1.2-6.2 1.4-8.2 2.7-1.9 6.3-1.4 8.2 1.2 1.9 2.6 1.3 6.3-1.4 8.2z",
-      fill: "#333"
+      fill: color
     })
   );
 };

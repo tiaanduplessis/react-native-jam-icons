@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var LifeBouy = function LifeBouy(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var LifeBouy = function LifeBouy(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M32 0C14.3 0 0 14.3 0 32s14.3 32 32 32 32-14.3 32-32S49.7 0 32 0zm12.6 7C50 9.7 54.3 14 57 19.4L48.6 25c-1.8-4.3-5.3-7.7-9.5-9.5L44.6 7zM19.4 7l5.6 8.4c-4.3 1.8-7.7 5.2-9.5 9.5L7 19.3C9.7 14 14.1 9.7 19.4 7zm-.1 50C14 54.3 9.7 50 7 44.7l8.4-5.6c1.8 4.3 5.2 7.7 9.5 9.5L19.3 57zM18 32c0-7.7 6.3-14 14-14s14 6.3 14 14-6.3 14-14 14-14-6.3-14-14zm26.7 25L39 48.6c4.3-1.8 7.7-5.3 9.5-9.5l8.4 5.6C54.3 49.9 50 54.3 44.7 57z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

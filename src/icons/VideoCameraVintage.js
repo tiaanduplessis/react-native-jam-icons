@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Circle } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const VideoCameraVintage = props => (
+const VideoCameraVintage = ({ color, ...props }) => (
   <Svg viewBox="0 0 60 58" {...props}>
     <Path
       className="st0"

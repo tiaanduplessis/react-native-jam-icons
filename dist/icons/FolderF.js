@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var FolderF = function FolderF(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var FolderF = function FolderF(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 50" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M0 48c0 1.1.9 2 2 2h60c1.1 0 2-.9 2-2V20H0v28zM62 7H24V2c0-1.1-.9-2-2-2H2C.9 0 0 .9 0 2v14h64V9c0-1.1-.9-2-2-2z",
-      fill: "#333"
+      fill: color
     })
   );
 };

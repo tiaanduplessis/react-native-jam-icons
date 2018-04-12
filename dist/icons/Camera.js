@@ -16,12 +16,17 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Camera = function Camera(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Camera = function Camera(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 50" }, props),
     _react2.default.createElement(
-      _reactNativeSvg.G,
+      G,
       { id: "camera" },
       _react2.default.createElement(_reactNativeSvg.Path, {
         id: "Combined-Shape",
@@ -33,7 +38,7 @@ var Camera = function Camera(props) {
         className: "st0",
         d: "M32 39c6.6 0 12-5.4 12-12s-5.4-12-12-12-12 5.4-12 12 5.4 12 12 12zm0 4c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"
       }),
-      _react2.default.createElement(_reactNativeSvg.Circle, { id: "Oval-41", cx: 53, cy: 18, r: 3, fill: "#333" })
+      _react2.default.createElement(Circle, { id: "Oval-41", cx: 53, cy: 18, r: 3, fill: color })
     )
   );
 };

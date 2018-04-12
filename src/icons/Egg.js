@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const Egg = props => (
+const Egg = ({ color, ...props }) => (
   <Svg viewBox="0 0 48 64" {...props}>
     <Path
       d="M23.6.3C10.6.3 0 26.4 0 39.5s10.6 23.7 23.6 23.7 23.6-10.6 23.6-23.7S36.6.3 23.6.3zm0 57c-9.7 0-17.6-8-17.6-17.8C6 26.3 16.5 6.3 23.6 6.3s17.6 20.1 17.6 33.3c0 9.7-7.9 17.7-17.6 17.7z"
-      fill="#343434"
+      fill={color}
     />
   </Svg>
 );

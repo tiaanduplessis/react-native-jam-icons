@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Ellipse } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Bandage = props => (
+const Bandage = ({ color, ...props }) => (
   <Svg viewBox="0 0 60 60" {...props}>
     <Path
       className="st0"

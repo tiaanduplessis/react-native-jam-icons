@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CaretRight = function CaretRight(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var CaretRight = function CaretRight(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 40 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M39.2 31.4L1.6 1.3C.7.6 0 .9 0 2v60c0 1.1.7 1.4 1.6.7l37.7-30.1c.4-.3.4-.9-.1-1.2z",
-      fill: "#333"
+      fill: color
     })
   );
 };

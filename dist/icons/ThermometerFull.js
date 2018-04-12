@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ThermometerFull = function ThermometerFull(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var ThermometerFull = function ThermometerFull(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 26 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M22 41.6V9c0-5-4-9-9-9S4 4 4 9v32.6C1.5 44 0 47.3 0 51c0 7.2 5.8 13 13 13s13-5.8 13-13c0-3.7-1.5-7-4-9.4zM13 60c-5 0-9-4-9-9 0-2.5 1-4.8 2.8-6.5L8 43.3V9c0-2.8 2.2-5 5-5s5 2.2 5 5v34.3l1.2 1.2c1.8 1.7 2.8 4 2.8 6.5 0 5-4 9-9 9zm3-15.3V11h-6v33.7c-2.4 1.1-4 3.5-4 6.3 0 3.9 3.1 7 7 7s7-3.1 7-7c0-2.8-1.6-5.2-4-6.3z",
-      fill: "#333"
+      fill: color
     })
   );
 };

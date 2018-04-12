@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var IceCream = function IceCream(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var IceCream = function IceCream(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 32 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M16 0C7.2 0 0 7.2 0 16v32h13v13c0 1.6 1.3 3 3 3s3-1.3 3-3V48h13V16c0-8.8-7.2-16-16-16zm12 44H4V16C4 9.4 9.4 4 16 4s12 5.4 12 12v28z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Circle, Path } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Ghost = props => (
+const Ghost = ({ color, ...props }) => (
   <Svg viewBox="0 0 48 64" {...props}>
     <Circle className="st0" cx={34} cy={22} r={6} />
     <Circle className="st0" cx={14} cy={22} r={6} />

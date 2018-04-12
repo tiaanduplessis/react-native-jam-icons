@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Yahoo = function Yahoo(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Yahoo = function Yahoo(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 38" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M56.1 30.7l3.7.3L64 13.8c-.7 0-7.2-.7-8-.8l.1 17.7zm2-22.7l1.8-2.6h-.1l.2-.2H35.1l1 3.9h6.8L31.4 19.4c-2.3-3.2-7.8-9.9-11.6-15.5h8.6v-3l.1-.7h-.1V0H0v3.9h8.4C11.7 6.5 24.2 22 24.7 23.6c.2 1.5.4 10-.2 10.7-1.2 1.3-6.8 1-8.2 1.1l-.5 2.6c2.5.1 10.5-.2 13-.2 4.9 0 13.5 0 14.8.1l.1-2.8-9-.2c-.2-1.4-.4-10.4-.2-11.3.9-2.7 15.2-13.7 16.8-14.1.4-.1.9-.2 1.5-.3h4.6l.7-1.2zM55 33v4.6l2.1.2 2.2.2.7-4.5-2.4-.2z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

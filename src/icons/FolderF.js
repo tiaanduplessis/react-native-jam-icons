@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const FolderF = props => (
+const FolderF = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 50" {...props}>
     <Path
       d="M0 48c0 1.1.9 2 2 2h60c1.1 0 2-.9 2-2V20H0v28zM62 7H24V2c0-1.1-.9-2-2-2H2C.9 0 0 .9 0 2v14h64V9c0-1.1-.9-2-2-2z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

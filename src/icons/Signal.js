@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Circle } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Signal = props => (
+const Signal = ({ color, ...props }) => (
   <Svg viewBox="0 0 60 54" {...props}>
     <Path
       className="st0"

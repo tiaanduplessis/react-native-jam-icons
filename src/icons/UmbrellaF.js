@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const UmbrellaF = props => (
+const UmbrellaF = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 64" {...props}>
     <Path
       d="M44 54c-1.1 0-2 .9-2 2 0 2.2-1.8 4-4 4s-4-1.8-4-4V32h29.9C62.4 16.4 49.7 4 34 3.1V2c0-1.1-.9-2-2-2s-2 .9-2 2v1.1C14.3 4 1.6 16.4.1 32H30v24c0 4.4 3.6 8 8 8s8-3.6 8-8c0-1.1-.9-2-2-2z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

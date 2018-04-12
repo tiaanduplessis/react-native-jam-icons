@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Cutter = function Cutter(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Cutter = function Cutter(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 63 56" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M61 1.8c-2.3-2.3-6.1-2.3-8.5 0L21.4 33c-1.5-.2-3.1.2-4.2 1.4-1.4 1.4-1.8 3.6-1.1 5.4L.9 54.9l13.4.7 8.8-8.8c1.8.7 3.9.3 5.4-1.1 1.2-1.2 1.6-2.7 1.4-4.2L61 10.3c2.4-2.3 2.4-6.1 0-8.5zM12.8 51.5l-2.7-.1 7.8-7.8 1.4 1.4-6.5 6.5zm12.9-8.7c-.4.4-1 .4-1.4 0L20 38.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l4.2 4.2c.5.4.5 1 .1 1.4zM58.2 7.5L28.5 37.2l-2.8-2.8L55.4 4.6c.8-.8 2-.8 2.8 0 .8.8.8 2.1 0 2.9zm-5.7 1.4L31.3 30.1c-.4.4-.4 1 0 1.4s1 .4 1.4 0l21.2-21.2c.4-.4.4-1 0-1.4-.3-.4-1-.4-1.4 0z",
-      fill: "#333"
+      fill: color
     })
   );
 };

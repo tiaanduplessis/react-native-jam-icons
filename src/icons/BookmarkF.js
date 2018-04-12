@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const BookmarkF = props => (
+const BookmarkF = ({ color, ...props }) => (
   <Svg viewBox="0 0 54 64" {...props}>
     <Path
       d="M53 13.6V4c0-2.2-1.8-4-4-4H5C2.8 0 1 1.8 1 4v9.6c0 .1-.1.3-.1.5v42.8c0 7.6 4.3 9.3 9.5 3.9L27 43.6l16.2 16.8c5.4 5.6 9.8 3.8 9.8-4V14.1c.1-.2 0-.4 0-.5z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

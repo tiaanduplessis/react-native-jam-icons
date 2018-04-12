@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { G, Path } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const BehanceSquare = props => (
+const BehanceSquare = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 64" {...props}>
     <G id="behance-square">
       <Path

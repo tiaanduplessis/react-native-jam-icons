@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var MoreF = function MoreF(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var MoreF = function MoreF(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 16" }, props),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 8, cy: 8, r: 8 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 32, cy: 8, r: 8 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 56, cy: 8, r: 8 })
+    _react2.default.createElement(Circle, { className: "st0", cx: 8, cy: 8, r: 8 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 32, cy: 8, r: 8 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 56, cy: 8, r: 8 })
   );
 };
 

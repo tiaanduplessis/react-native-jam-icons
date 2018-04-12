@@ -16,7 +16,12 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var MessageWritingAlt = function MessageWritingAlt(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var MessageWritingAlt = function MessageWritingAlt(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 63" }, props),
@@ -24,9 +29,9 @@ var MessageWritingAlt = function MessageWritingAlt(props) {
       className: "st0",
       d: "M53 0H11C4.9 0 0 4.9 0 11v26c0 6.1 4.9 11 11 11h21.3l19.3 14.3c1.3 1 2.2.4 2-1.2L52 48l4-.4c4.6-1.3 8-5.5 8-10.6V11c0-6.1-4.9-11-11-11zm7 37c0 3.9-3.1 7-7 7h-5.5l1.4 11.3L33.6 44H11c-3.9 0-7-3.1-7-7V11c0-3.9 3.1-7 7-7h42c3.9 0 7 3.1 7 7v26z"
     }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 20, cy: 25, r: 4 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 32, cy: 25, r: 4 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 44, cy: 25, r: 4 })
+    _react2.default.createElement(Circle, { className: "st0", cx: 20, cy: 25, r: 4 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 32, cy: 25, r: 4 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 44, cy: 25, r: 4 })
   );
 };
 

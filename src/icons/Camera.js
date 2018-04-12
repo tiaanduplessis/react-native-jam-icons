@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { G, Path, Circle } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Camera = props => (
+const Camera = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 50" {...props}>
     <G id="camera">
       <Path
@@ -14,7 +14,7 @@ const Camera = props => (
         className="st0"
         d="M32 39c6.6 0 12-5.4 12-12s-5.4-12-12-12-12 5.4-12 12 5.4 12 12 12zm0 4c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"
       />
-      <Circle id="Oval-41" cx={53} cy={18} r={3} fill="#333" />
+      <Circle id="Oval-41" cx={53} cy={18} r={3} fill={color} />
     </G>
   </Svg>
 );

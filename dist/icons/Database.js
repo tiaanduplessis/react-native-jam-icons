@@ -16,7 +16,12 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Database = function Database(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Database = function Database(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
@@ -24,18 +29,18 @@ var Database = function Database(props) {
       className: "st0",
       d: "M64 16V8c0-4.4-3.6-8-8-8H8C3.6 0 0 3.6 0 8v8c0 2.4 1.1 4.5 2.7 6C1.1 23.5 0 25.6 0 28v8c0 2.4 1.1 4.5 2.7 6C1.1 43.5 0 45.6 0 48v8c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-8c0-2.4-1.1-4.5-2.7-6 1.7-1.5 2.7-3.6 2.7-6v-8c0-2.4-1.1-4.5-2.7-6 1.6-1.5 2.7-3.6 2.7-6zm-4 32v8c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h48c2.2 0 4 1.8 4 4zm0-20v8c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h48c2.2 0 4 1.8 4 4zM8 20c-2.2 0-4-1.8-4-4V8c0-2.2 1.8-4 4-4h48c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H8z"
     }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 47, cy: 32, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 54, cy: 52, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 47, cy: 52, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 12, cy: 52, r: 4 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 40, cy: 52, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 54, cy: 32, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 47, cy: 12, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 54, cy: 12, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 40, cy: 12, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 12, cy: 12, r: 4 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 40, cy: 32, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 12, cy: 32, r: 4 })
+    _react2.default.createElement(Circle, { className: "st0", cx: 47, cy: 32, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 54, cy: 52, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 47, cy: 52, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 12, cy: 52, r: 4 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 40, cy: 52, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 54, cy: 32, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 47, cy: 12, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 54, cy: 12, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 40, cy: 12, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 12, cy: 12, r: 4 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 40, cy: 32, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 12, cy: 32, r: 4 })
   );
 };
 

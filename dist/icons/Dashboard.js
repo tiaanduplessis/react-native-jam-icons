@@ -16,7 +16,12 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Dashboard = function Dashboard(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var Dashboard = function Dashboard(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 48" }, props),
@@ -24,11 +29,11 @@ var Dashboard = function Dashboard(props) {
       className: "st0",
       d: "M32 0C14.3 0 0 14.3 0 32c0 5.8 1.6 11.3 4.3 16h55.4c2.7-4.7 4.3-10.2 4.3-16C64 14.3 49.7 0 32 0zm25.3 44H6.7C4.9 40.3 4 36.2 4 32 4 16.5 16.5 4 32 4s28 12.5 28 28c0 4.2-.9 8.3-2.7 12zm-30.4-6.9c2.7 2.7 7.2 2.7 9.9 0S43 21 43 21s-13.4 3.5-16.1 6.2c-2.7 2.7-2.7 7.2 0 9.9zm2.2-7.8c.2-.2.8-.5 1.6-1 1.3-.6 3-1.3 5.1-2 .9-.3 1.9-.6 2.9-1-.3 1-.6 2-1 2.9-.7 2.1-1.4 3.8-2 5.1-.4.8-.8 1.4-1 1.6-1.6 1.6-4.1 1.6-5.7 0-1.5-1.5-1.5-4 .1-5.6z"
     }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 16, cy: 16, r: 2 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 32, cy: 10, r: 3 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 10, cy: 32, r: 3 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 54, cy: 32, r: 3 }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 48, cy: 16, r: 2 })
+    _react2.default.createElement(Circle, { className: "st0", cx: 16, cy: 16, r: 2 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 32, cy: 10, r: 3 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 10, cy: 32, r: 3 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 54, cy: 32, r: 3 }),
+    _react2.default.createElement(Circle, { className: "st0", cx: 48, cy: 16, r: 2 })
   );
 };
 

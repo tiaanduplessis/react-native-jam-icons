@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const VolumeMuteF = props => (
+const VolumeMuteF = ({ color, ...props }) => (
   <Svg viewBox="0 0 55 64" {...props}>
     <Path
       d="M27.4 1.2L10.1 20H2c-1.1 0-2 .9-2 2v20c0 1.1.9 2 2 2h8.1l17.4 18.8c1.1 1.2 2 .9 2-.8V2c0-1.7-.9-2-2.1-.8zm27.2 24.4l-4.2-4.2-6.4 6.4-6.4-6.4-4.2 4.2 6.4 6.4-6.4 6.4 4.2 4.2 6.4-6.4 6.4 6.4 4.2-4.2-6.4-6.4z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

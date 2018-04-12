@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SnapchatSquare = function SnapchatSquare(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var SnapchatSquare = function SnapchatSquare(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M60 0H4C1.8 0 0 1.8 0 4v56c0 2.2 1.8 4 4 4h56c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zm-4.7 44.9c-.5 1.2-2.4 2-6 2.6-.1.2-.2.7-.2.9l-.3 1.1c-.2.7-.7 1-1.4 1-.3 0-.7 0-1.2-.1-.7-.1-1.5-.3-2.4-.3l-1.7.1c-1.1.2-2.1.9-3.2 1.7C37 53.3 34.6 54 32 54h-.5c-3 0-4.5-.9-6.2-2.1-1.1-.8-2.1-1.5-3.2-1.7-.6-.1-1.2-.1-1.7-.1-1 0-1.8.2-2.4.3-.4.1-.8.2-1.1.2-1 0-1.3-.7-1.4-1-.1-.4-.2-.8-.3-1.1-.1-.3-.1-.7-.2-.9-3.7-.6-5.7-1.4-6.2-2.6-.1-.2-.1-.4-.1-.5 0-.6.4-1.2 1.1-1.3 6.2-1 8.9-7.4 9.1-7.7.3-.7.4-1.2.2-1.5-.3-.7-1.6-1.2-2.4-1.4-.3-.1-.5-.2-.7-.2-2.3-.9-2.7-2.1-2.5-2.8.3-1.4 2.3-2.1 3.4-1.6.8.4 1.4.5 2 .5.3 0 .5 0 .6-.1 0-.3 0-.6-.1-.9-.4-3.5-.6-7.5.4-9.9 3.2-7 9.8-7.6 11.8-7.6h.9c2 0 8.6.5 11.8 7.6 1.1 2.4.8 6.4.6 9.6v.9c.1 0 .3.1.5.1.5 0 1.1-.2 1.8-.5.4-.2.8-.2 1-.2.4 0 .8.1 1.1.2.9.3 1.6 1.1 1.6 1.9 0 1-.8 1.9-2.5 2.6l-.6.2c-.8.3-2.2.7-2.5 1.4-.2.4-.1.9.2 1.5v.1c.3.7 3 6.7 8.9 7.7.6.1 1.1.7 1.1 1.3 0 .1-.1.3-.2.5z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Circle } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const Dashboard = props => (
+const Dashboard = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 48" {...props}>
     <Path
       className="st0"

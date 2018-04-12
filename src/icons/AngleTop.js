@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const AngleTop = props => (
+const AngleTop = ({ color, ...props }) => (
   <Svg viewBox="0 0 62 34" {...props}>
     <Path
       d="M60.7 28.7L33.1 1.1c-.4-.4-1-.7-1.5-.8L31 .2c-.8 0-1.5.3-2.1.9L1.3 28.7c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0L31 7.5 56.5 33c1.2 1.2 3.1 1.2 4.2 0 1.2-1.2 1.2-3.1 0-4.3z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

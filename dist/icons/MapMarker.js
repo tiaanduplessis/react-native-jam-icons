@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var MapMarker = function MapMarker(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var MapMarker = function MapMarker(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 44 65" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M22 0C8.4 0 0 9.1 0 22c0 13.8 20.8 41.4 20.8 41.4.7.9 1.7.9 2.4 0 0 0 20.8-27.6 20.8-41.4C44 9.1 35.1 0 22 0zm8.2 45.8c-2.2 3.7-4.6 7.3-7 10.8-.4.6-.8 1.1-1.2 1.6l-1.2-1.6c-2.4-3.4-4.8-7.1-7-10.8-1.8-3-3.5-6-4.9-8.7C5.8 30.7 4 25.4 4 22 4 11 10.9 4 22 4c10.8 0 18 7.3 18 18 0 3.4-1.8 8.7-5 15.1-1.4 2.7-3 5.7-4.8 8.7zM22 9c-6.6 0-12 5.4-12 12s5.4 12 12 12 12-5.4 12-12S28.6 9 22 9zm0 20c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

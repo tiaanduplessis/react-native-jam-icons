@@ -16,7 +16,12 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BrightnessDown = function BrightnessDown(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var BrightnessDown = function BrightnessDown(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 48 48" }, props),
@@ -24,7 +29,7 @@ var BrightnessDown = function BrightnessDown(props) {
       className: "st0",
       d: "M7 24c0-.7 0-1.3.1-2H2c-1.1 0-2 .9-2 2s.9 2 2 2h5.1c-.1-.7-.1-1.3-.1-2zm3.6-10.5c.8-1 1.8-2 2.8-2.8L9.9 7c-.8-.8-2.1-.8-2.9 0-.8.8-.8 2 0 2.8l3.6 3.7zM26 7.1V2c0-1.1-.9-2-2-2s-2 .9-2 2v5.1c.7-.1 1.3-.1 2-.1s1.3 0 2 .1zm11.4 6.4L41 9.9c.8-.8.8-2 0-2.8-.8-.8-2-.8-2.8 0l-3.6 3.6c1 .8 1.9 1.7 2.8 2.8zM22 40.9V46c0 1.1.9 2 2 2s2-.9 2-2v-5.1c-.7.1-1.3.1-2 .1s-1.3 0-2-.1zm15.4-6.4c-.8 1-1.8 2-2.8 2.8l3.6 3.6c.8.8 2 .8 2.8 0 .8-.8.8-2 0-2.8l-3.6-3.6zm-26.8 0L7 38.1c-.8.8-.8 2 0 2.8.8.8 2 .8 2.8 0l3.6-3.6c-1-.8-1.9-1.7-2.8-2.8zM46 22h-5.1c.1.7.1 1.3.1 2s0 1.3-.1 2H46c1.1 0 2-.9 2-2s-.9-2-2-2z"
     }),
-    _react2.default.createElement(_reactNativeSvg.Circle, { className: "st0", cx: 24, cy: 24, r: 14 })
+    _react2.default.createElement(Circle, { className: "st0", cx: 24, cy: 24, r: 14 })
   );
 };
 

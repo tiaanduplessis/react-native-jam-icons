@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var File = function File(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var File = function File(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 48 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M32 0H1C.4 0 0 .5 0 1v62c0 .6.4 1 1 1h46c.6 0 1-.5 1-1V16L32 0zm12 60H4V4h26.3L44 17.7V60z",
-      fill: "#343434"
+      fill: color
     })
   );
 };

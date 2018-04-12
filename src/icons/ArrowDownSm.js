@@ -1,11 +1,11 @@
 import React from "react";
 import Svg, { Path } from "react-native-svg";
 
-const ArrowDownSm = props => (
+const ArrowDownSm = ({ color, ...props }) => (
   <Svg viewBox="0 0 32 63" {...props}>
     <Path
       d="M30.8 44.8c-1.2-1.2-3.1-1.2-4.2 0l-7.4 7.4v-49c0-1.7-1.3-3-3-3s-3 1.3-3 3v49.3l-7.8-7.8c-1.2-1.2-3.1-1.2-4.2 0C0 46 0 47.9 1.1 49.1l12.7 12.7c.6.6 1.3.9 2.1.9s1.5-.3 2.1-.9l12.7-12.7c1.3-1.2 1.3-3.1.1-4.3z"
-      fill="#333"
+      fill={color}
     />
   </Svg>
 );

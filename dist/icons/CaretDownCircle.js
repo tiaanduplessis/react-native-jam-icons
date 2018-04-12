@@ -16,13 +16,18 @@ var _reactNativeSvg2 = _interopRequireDefault(_reactNativeSvg);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CaretDownCircle = function CaretDownCircle(props) {
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+var CaretDownCircle = function CaretDownCircle(_ref) {
+  var color = _ref.color,
+      props = _objectWithoutProperties(_ref, ["color"]);
+
   return _react2.default.createElement(
     _reactNativeSvg2.default,
     _extends({ viewBox: "0 0 64 64" }, props),
     _react2.default.createElement(_reactNativeSvg.Path, {
       d: "M32 0C14.3 0 0 14.3 0 32s14.3 32 32 32 32-14.3 32-32S49.7 0 32 0zm0 58C17.6 58 6 46.4 6 32S17.6 6 32 6s26 11.6 26 26-11.6 26-26 26zm12.9-30.9H19.1c-1.1 0-1.4.7-.7 1.5l12.9 14.2c.4.4 1 .4 1.3 0l12.9-14.2c.8-.8.5-1.5-.6-1.5z",
-      fill: "#333"
+      fill: color
     })
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
-import Svg, { Path, Circle } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
-const InstagramSquare = props => (
+const InstagramSquare = ({ color, ...props }) => (
   <Svg viewBox="0 0 64 64" {...props}>
     <Path
       className="st0"
