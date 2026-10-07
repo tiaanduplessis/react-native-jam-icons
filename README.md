@@ -11,6 +11,7 @@
 ## Table of Contents
 
 - [About](#about)
+- [Icon set compatibility](#icon-set-compatibility)
 - [Install](#install)
 - [Usage](#usage)
 - [Contribute](#contribute)
@@ -19,6 +20,12 @@
 ## About
 
 handcrafted & pixel perfect icons form [Jam icons](http://jam-icons.com/) as React components. Created using [SVGR](https://github.com/smooth-code/svgr)
+
+## Icon set compatibility
+
+This package bundles 422 components from the Jam Icons v1 generation. The source submodule is pinned to [upstream revision 3c0c551](https://github.com/nordeio/jam-icons/tree/3c0c551cdf6633cecd7baec0aeb77ce8b83dd3c7), whose [README documents v1.0.72](https://github.com/nordeio/jam-icons/blob/3c0c551cdf6633cecd7baec0aeb77ce8b83dd3c7/README.md).
+
+Jam Icons v2 [redrew the icon shapes](https://github.com/nordeio/jam-icons/blob/4c148783c30645d0987496f614bb8374f52bd3cf/README.md#compatibility), so previews on the newer Jam Icons website can differ from this package. Use the bundled [components](src/icons) and [exports](src/index.js) to check which icons are available. This package does not download or automatically track upstream icon updates.
 
 ## Install
 
@@ -42,7 +49,7 @@ const Example = (props) => <View>
 </View>
 ```
 
-See [icons](src/icons) and [jam-icons](http://jam-icons.com/) for available icons.
+See the [bundled icon components](src/icons) and [exports](src/index.js) for available icons.
 
 ## Contribute
 
